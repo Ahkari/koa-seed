@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="Shortcut Icon" href="{{local.static_url}}/images/favicon.ico" type="image/x-icon"/>
+    {% block stylesHead %}
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+<p>welcome to pwc project!</p>
+{% endblock %}
+
+<script type="text/javascript" src="{{local.static_url}}/scripts/libs/jquery-3.1.1/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="{{local.static_url}}/scripts/libs/jquery.widget-1.12.1/jquery.widget.js"></script>
+
+{% block scriptsFoot %}
+{% endblock %}
+
+</body>
+</html>
